@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-118344006-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Free V2ray | To Think | A site for liberty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="v2ray,tutor">
+    <meta name="description" content="最近发现有一个程序托管的网站可以免费搭建 v2ray，自己测试了一下，速度还行，下载 1-2M/s，延迟 200ms 以上，自己看看视频网页是够用了。故写一篇教程，希望大家低调使用。">
+<meta name="keywords" content="v2ray,tutor">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Free V2ray">
+<meta property="og:url" content="https://www.orin.gq/2018/08/10/Free-V2ray/index.html">
+<meta property="og:site_name" content="To Think">
+<meta property="og:description" content="最近发现有一个程序托管的网站可以免费搭建 v2ray，自己测试了一下，速度还行，下载 1-2M/s，延迟 200ms 以上，自己看看视频网页是够用了。故写一篇教程，希望大家低调使用。">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://i.loli.net/2018/08/12/5b702c5494c9b.png">
+<meta property="og:image" content="https://i.loli.net/2018/08/12/5b702c5494322.png">
+<meta property="og:image" content="https://i.loli.net/2018/08/12/5b702c5495481.png">
+<meta property="og:image" content="https://i.loli.net/2018/08/12/5b702c5493918.png">
+<meta property="og:image" content="https://i.loli.net/2018/08/12/5b702c5495e54.png">
+<meta property="og:image" content="https://i.loli.net/2018/08/12/5b702c534806d.png">
+<meta property="og:updated_time" content="2018-11-30T14:31:04.310Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free V2ray">
+<meta name="twitter:description" content="最近发现有一个程序托管的网站可以免费搭建 v2ray，自己测试了一下，速度还行，下载 1-2M/s，延迟 200ms 以上，自己看看视频网页是够用了。故写一篇教程，希望大家低调使用。">
+<meta name="twitter:image" content="https://i.loli.net/2018/08/12/5b702c5494c9b.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="To Think" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpeg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Orin</h5>
+          <a href="mailto:jsclndnz@gmail.com" title="jsclndnz@gmail.com" class="mail">jsclndnz@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/About"  >
+                <i class="icon icon-lg icon-link"></i>
+                About
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Free V2ray</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Free V2ray</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-08-09T22:42:05.000Z" itemprop="datePublished" class="page-time">
+  2018-08-10
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/web-tool/">web tool</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+
+<article id="post-Free-V2ray"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Free V2ray</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-08-10 06:42:05" datetime="2018-08-09T22:42:05.000Z"  itemprop="datePublished">2018-08-10</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/web-tool/">web tool</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>　　最近发现有一个程序托管的网站可以免费搭建 v2ray，自己测试了一下，速度还行，下载 1-2M/s，延迟 200ms 以上，自己看看视频网页是够用了。故写一篇教程，希望大家低调使用。<br>　　<br>　　<a id="more"></a><br>　　<br>　　打开<a href="https://signup.heroku.com/login" target="_blank" rel="noopener">heroku 网站</a>并注册，邮箱填自己的，其他可以乱填。注意：注册需要加载谷歌人机验证，需要科学上网，否则会报错。注册后登录，可能需要验证邮箱地址。<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://i.loli.net/2018/08/12/5b702c5494c9b.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure><br>　　<br>　　打开 GitHub 的代码库<a href="https://github.com/hxc1427418039/v2ray-heroku" target="_blank" rel="noopener">v2ray 一键搭建脚本</a>，点紫色的按钮 Deploy to Heroku<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://i.loli.net/2018/08/12/5b702c5494322.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure><br>　　<br>　　输入 app name，建议地区选欧洲，速度似乎较快。<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://i.loli.net/2018/08/12/5b702c5495481.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure><br>　　<br>　　点击<a href="https://www.uuidgenerator.net" target="_blank" rel="noopener">随机生成 UUID</a>，替换掉默认的 UUID，然后点 Deploy app。<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://i.loli.net/2018/08/12/5b702c5493918.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure><br>　　<br>　　等待一会，生成好了以后点最右边的 settings，config vars 里面点 reveal config vars，可以看到 UUID，复制下来配置的时候要用。在 Domains and certificates 里面有一个链接，点开，如果显示 Bad request，就说明成功了。<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://i.loli.net/2018/08/12/5b702c5495e54.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure><br>　　<br>　　进入 v2ray 配置，主机名填刚刚打开的域名，注意是域名，没有 https，即 xxxxx.herokuapp.com，UUID 填刚刚复制的，其它照着图片中的填。<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://i.loli.net/2018/08/12/5b702c534806d.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure><br>　　<br>　　配置好了以后就可以了。<br>　　<br>　　感谢 v2ray 一键脚本的开发者<a href="https://github.com/hxc1427418039" target="_blank" rel="noopener">hxc1427418039</a>和<a href="https://www.v2ray.com" target="_blank" rel="noopener">Project V</a>让我们能够用到自由的网络。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2018-11-30T14:31:04.310Z" itemprop="dateUpdated">2018-11-30 22:31:04</time>
+</span><br>
+
+
+        
+        Thanks for reading!
+        
+    </div>
+    
+    <footer>
+        <a href="https://www.orin.gq">
+            <img src="/img/avatar.jpeg" alt="Orin">
+            Orin
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tutor/">tutor</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/v2ray/">v2ray</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.orin.gq/2018/08/10/Free-V2ray/&title=《Free V2ray》 — To Think&pic=https://www.orin.gq/img/avatar.jpeg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.orin.gq/2018/08/10/Free-V2ray/&title=《Free V2ray》 — To Think&source=　　最近发现有一个程序托管的网站可以免费搭建 v2ray，自己测试了一下，速度还行，下载 1-2M/s，延迟 200ms 以上，自己看看视频网页是够用了。..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.orin.gq/2018/08/10/Free-V2ray/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Free V2ray》 — To Think&url=https://www.orin.gq/2018/08/10/Free-V2ray/&via=https://www.orin.gq" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://www.orin.gq/2018/08/10/Free-V2ray/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/08/11/D1-First-To-Sydney/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">D1 First To Sydney</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/07/31/WTO-debate/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">WTO debate</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "DJGlnpMorPso1nVKd7FMjDAA-gzGzoHsz",
+            appKey: "JijoQx84gM7cqmhC5Xa49xWD",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Orin &copy; 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.orin.gq/2018/08/10/Free-V2ray/&title=《Free V2ray》 — To Think&pic=https://www.orin.gq/img/avatar.jpeg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.orin.gq/2018/08/10/Free-V2ray/&title=《Free V2ray》 — To Think&source=　　最近发现有一个程序托管的网站可以免费搭建 v2ray，自己测试了一下，速度还行，下载 1-2M/s，延迟 200ms 以上，自己看看视频网页是够用了。..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.orin.gq/2018/08/10/Free-V2ray/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Free V2ray》 — To Think&url=https://www.orin.gq/2018/08/10/Free-V2ray/&via=https://www.orin.gq" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://www.orin.gq/2018/08/10/Free-V2ray/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABx0lEQVR42u3aS47DIBAFwNz/0jPSbDPG74GNWBSrKHGgkkWrP3w+8fr5W9+vr575fv97h6vnH1i4uLjL3J/huuLmn7bfujLg4uLu5ybBK0eMjxzTb2y4uLiHcdv05Qq6lDbh4uIexh0XLW2Rg4uLez43KX7yhCbf7cVaDRcXd4G70jB96vWm/i4uLu7yVKJNa8aUcXMkOh0XF3cLN986CUlz3LaFiouLu4e7Ep7mDks+LYofXFzcF7jtRas2FLZXsm6CIC4u7svcubZmO3RZL4o++da4uLgvc/MQ04bCvPkSdXFwcXEf5T5VLS0NRNf3wcXFfZQ7V94kKUtS8NRFFy4u7kbuSgsjIc61Rf5R4eLibuTm4WmlmdL+AFxc3BO4S1PZshk62ZDFxcXdwm3boG1KNHct4ybM4eLivsydO6C4eF1eyMDFxT2H245L84PnmrM3M2FcXNwt3HytFDDtz4tmv7i4uC9w24DybMHTtmhxcXF3ctvglV+lyoNgUmLh4uLu57bpSJsY5RH05hlcXNzDuHMXturZzvgUXFzcg7lzg9IHCidcXNyN3GLYGSDyAWr9B+Hi4m7htg3TdqS6PpLBxcXdyP0F68N2nYqtEmcAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>

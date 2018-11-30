@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<!-- Google Analytics -->
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-118344006-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
+
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>D3 City | To Think | A site for liberty</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="昨日的疲惫似乎并不能掩盖住今天旅行的热情。上午八点我们准时出门，奔赴悉尼鱼市场。虽然早已听过悉尼鱼市场好坏参半的评论，还是想自己感受一下号称悉尼必去的鱼市场。">
+<meta name="keywords" content="news, opinions, thoughts, ideas">
+<meta property="og:type" content="article">
+<meta property="og:title" content="D3 City">
+<meta property="og:url" content="https://www.orin.gq/2018/08/13/D3-City/index.html">
+<meta property="og:site_name" content="To Think">
+<meta property="og:description" content="昨日的疲惫似乎并不能掩盖住今天旅行的热情。上午八点我们准时出门，奔赴悉尼鱼市场。虽然早已听过悉尼鱼市场好坏参半的评论，还是想自己感受一下号称悉尼必去的鱼市场。">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-11-30T14:31:04.310Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="D3 City">
+<meta name="twitter:description" content="昨日的疲惫似乎并不能掩盖住今天旅行的热情。上午八点我们准时出门，奔赴悉尼鱼市场。虽然早已听过悉尼鱼市场好坏参半的评论，还是想自己感受一下号称悉尼必去的鱼市场。">
+    
+        <link rel="alternate" type="application/atom+xml" title="To Think" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpeg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Orin</h5>
+          <a href="mailto:jsclndnz@gmail.com" title="jsclndnz@gmail.com" class="mail">jsclndnz@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/About"  >
+                <i class="icon icon-lg icon-link"></i>
+                About
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">D3 City</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">D3 City</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-08-13T04:19:39.000Z" itemprop="datePublished" class="page-time">
+  2018-08-13
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Travel-To-Sydney/">Travel To Sydney</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+
+<article id="post-D3-City"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">D3 City</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-08-13 12:19:39" datetime="2018-08-13T04:19:39.000Z"  itemprop="datePublished">2018-08-13</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Travel-To-Sydney/">Travel To Sydney</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>　　昨日的疲惫似乎并不能掩盖住今天旅行的热情。上午八点我们准时出门，奔赴悉尼鱼市场。虽然早已听过悉尼鱼市场好坏参半的评论，还是想自己感受一下号称悉尼必去的鱼市场。</p>
+<a id="more"></a>
+<p>　　<br>　　坐的是轻轨，进站和出站口没有检票的，只有几个位置让人刷卡。我一直在想他是通过什么办法来防止逃票，后来才发现这里全靠自觉。不得不佩服澳大利亚人民素质高，不会贪这几块钱的小便宜。<br>　　<br>　　传说中的悉尼鱼市场很大，远远的就闻到了一股海鲜的腥味。由于去的时间比较早，市场内没有什么人，我们也乐得如此。鱼市场并不像我想象中的市场，而是一家一家的海鲜店铺。在 Peter’s 的店里，我们开始了选购。海鲜的种类很齐全，小到蛤蜊、扇贝、鲍鱼，大到三文鱼、帝王蟹、龙虾应有尽有。海鲜摊开摆放在碎冰上，可以看出还是很新鲜的，毕竟这里是澳洲最大的海鲜市场，在新鲜程度上还是不成问题的。海鲜的价格普遍比较昂贵，帝王蟹和澳龙的价格更是高达一百多澳元一公斤。在场的游客多为中国人，上午十一点一过，游人便熙熙攘攘，水泄不通，应该都是查到这个地方才特地赶来的吧。也正是有着这样的高需求，海鲜市场的价格才居高不下。<br>　　<br>　　不得不说，这里的就餐环境很好。在市场外的就餐区域，成排的桌椅靠着海边，周围还有许多海鸥盘旋环伺，我亲眼看到一只海鸥迅速飞下，抢夺游人的食物。在我们用餐时，一直有一只海鸥立在餐桌上朝着我们望，不知道是乞食还是准备着抢食，也许二者兼有吧。吃着海鲜，欣赏着海景，还与群群海鸥为伴，有了这样的感受也不虚此行了。<br>　　<br>　　下午原本计划是在附近的达令港和博物馆转转，结果发现把周围一圈都看完了时间尚早，于是一路向北，经过了中国城、海德公园，再通过港湾大桥回家，一共七八公里的路，也是这样轻轻松松地就走过来了。悉尼的中国人真是多，一路走来许多店铺都是华人所开，中国城里出现了许多“川菜”、“湘菜”等，不过味道估计不敢恭维，也许他们离开了家乡，做出来的菜就没有家乡的味道了。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2018-11-30T14:31:04.310Z" itemprop="dateUpdated">2018-11-30 22:31:04</time>
+</span><br>
+
+
+        
+        Thanks for reading!
+        
+    </div>
+    
+    <footer>
+        <a href="https://www.orin.gq">
+            <img src="/img/avatar.jpeg" alt="Orin">
+            Orin
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.orin.gq/2018/08/13/D3-City/&title=《D3 City》 — To Think&pic=https://www.orin.gq/img/avatar.jpeg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.orin.gq/2018/08/13/D3-City/&title=《D3 City》 — To Think&source=　　昨日的疲惫似乎并不能掩盖住今天旅行的热情。上午八点我们准时出门，奔赴悉尼鱼市场。虽然早已听过悉尼鱼市场好坏参半的评论，还是想自己感受一下号称悉尼必去的..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.orin.gq/2018/08/13/D3-City/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《D3 City》 — To Think&url=https://www.orin.gq/2018/08/13/D3-City/&via=https://www.orin.gq" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://www.orin.gq/2018/08/13/D3-City/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/08/14/D4-Harbour/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">D4 Harbour</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/08/12/D2-Bluemountain/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">D2 Bluemountain</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "DJGlnpMorPso1nVKd7FMjDAA-gzGzoHsz",
+            appKey: "JijoQx84gM7cqmhC5Xa49xWD",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Orin &copy; 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.orin.gq/2018/08/13/D3-City/&title=《D3 City》 — To Think&pic=https://www.orin.gq/img/avatar.jpeg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.orin.gq/2018/08/13/D3-City/&title=《D3 City》 — To Think&source=　　昨日的疲惫似乎并不能掩盖住今天旅行的热情。上午八点我们准时出门，奔赴悉尼鱼市场。虽然早已听过悉尼鱼市场好坏参半的评论，还是想自己感受一下号称悉尼必去的..." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.orin.gq/2018/08/13/D3-City/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《D3 City》 — To Think&url=https://www.orin.gq/2018/08/13/D3-City/&via=https://www.orin.gq" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://www.orin.gq/2018/08/13/D3-City/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABwUlEQVR42u3awa7CMAwEQP7/p/ukd6bFazcpSJMTqlCZcLDsTV6v8jr+1/Xz68/XT25euLi4Y+5xuVLuGeX6nRUDLi7ufu6cUmHVv3P6HBcX98u4vT4kbYlwcXF/i9vb2OTvwMXFfZZbGX7S9qXytoWzGi4u7oCbBqYrPi/Md3FxcUPuEa5KtFHHxb+Oi4u7hdsbVybbm8SsuLi4z3LTgSRtXK6/MzpkxcXFHXOD8lHYRnrNor6ZNx0ZLi7uRm4lHq23L/WAtVnIcHFxF3PrR56945NJ83Sa4uDi4i7gTmLN+hgzv84V3/XAxcUdc9PLVemxSr0xCjaJi4u7hZu2IGn7ksYiQViDi4u7gJuGF702aBK14OLi7uTWC9ZdA0/vzbi4uDu56RBSb2smW/1Q5nBxcRdze81NvZWpNElBGcXFxd3ITQ9T40rZi0FxcXEf5dbX6Fi0UMJGRya4uLg3cdOCUhlpemFHGtHi4uKu5vaOVOdha29YwsXF3clNi1caldYr6A35Li4u7kZufRt3xShv3oyLi/vF3PQaVr0B+jA44eLibuROEGkUm0YhzVkNFxd3wE0D00nB6sWsuLi4G7l/eZ9swybzL08AAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
