@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>To Think</title>
   
-  <subtitle>A site for liberty</subtitle>
+  <subtitle>观点在争论中碰撞，思想在思辨中创新</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.orin.gq/"/>
@@ -375,26 +375,26 @@
   </entry>
   
   <entry>
-    <title>Free V2ray</title>
-    <link href="https://www.orin.gq/2018/08/10/Free-V2ray/"/>
-    <id>https://www.orin.gq/2018/08/10/Free-V2ray/</id>
+    <title>免费v2ray搭建</title>
+    <link href="https://www.orin.gq/2018/08/10/%E5%85%8D%E8%B4%B9v2ray%E6%90%AD%E5%BB%BA/"/>
+    <id>https://www.orin.gq/2018/08/10/免费v2ray搭建/</id>
     <published>2018-08-09T22:42:05.000Z</published>
-    <updated>2018-11-30T14:31:04.310Z</updated>
+    <updated>2018-12-07T15:07:29.180Z</updated>
     
-    <content type="html"><![CDATA[<p>　　最近发现有一个程序托管的网站可以免费搭建 v2ray，自己测试了一下，速度还行，下载 1-2M/s，延迟 200ms 以上，自己看看视频网页是够用了。故写一篇教程，希望大家低调使用。<br>　　<br>　　<a id="more"></a><br>　　<br>　　打开<a href="https://signup.heroku.com/login" target="_blank" rel="noopener">heroku 网站</a>并注册，邮箱填自己的，其他可以乱填。注意：注册需要加载谷歌人机验证，需要科学上网，否则会报错。注册后登录，可能需要验证邮箱地址。<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.loli.net/2018/08/12/5b702c5494c9b.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>　　<br>　　打开 GitHub 的代码库<a href="https://github.com/hxc1427418039/v2ray-heroku" target="_blank" rel="noopener">v2ray 一键搭建脚本</a>，点紫色的按钮 Deploy to Heroku<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.loli.net/2018/08/12/5b702c5494322.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>　　<br>　　输入 app name，建议地区选欧洲，速度似乎较快。<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.loli.net/2018/08/12/5b702c5495481.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>　　<br>　　点击<a href="https://www.uuidgenerator.net" target="_blank" rel="noopener">随机生成 UUID</a>，替换掉默认的 UUID，然后点 Deploy app。<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.loli.net/2018/08/12/5b702c5493918.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>　　<br>　　等待一会，生成好了以后点最右边的 settings，config vars 里面点 reveal config vars，可以看到 UUID，复制下来配置的时候要用。在 Domains and certificates 里面有一个链接，点开，如果显示 Bad request，就说明成功了。<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.loli.net/2018/08/12/5b702c5495e54.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>　　<br>　　进入 v2ray 配置，主机名填刚刚打开的域名，注意是域名，没有 https，即 xxxxx.herokuapp.com，UUID 填刚刚复制的，其它照着图片中的填。<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.loli.net/2018/08/12/5b702c534806d.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>　　<br>　　配置好了以后就可以了。<br>　　<br>　　感谢 v2ray 一键脚本的开发者<a href="https://github.com/hxc1427418039" target="_blank" rel="noopener">hxc1427418039</a>和<a href="https://www.v2ray.com" target="_blank" rel="noopener">Project V</a>让我们能够用到自由的网络。</p>]]></content>
+    <content type="html"><![CDATA[<p>　　12月7日更新<br>　　本方法已几乎失效，本文永久停止更新<br>　　<a id="more"></a><br>　<br>　　最近发现有一个程序托管的网站可以免费搭建 v2ray，自己测试了一下，速度还行，下载 1-2M/s，延迟 200ms 以上，自己看看视频网页是够用了。故写一篇教程，希望大家低调使用。<br>　　打开<a href="https://signup.heroku.com/login" target="_blank" rel="noopener">heroku 网站</a>并注册，邮箱填自己的，其他可以乱填。注意：注册需要加载谷歌人机验证，需要科学上网，否则会报错。注册后登录，可能需要验证邮箱地址。<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.loli.net/2018/08/12/5b702c5494c9b.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>　　<br>　　打开 GitHub 的代码库<a href="https://github.com/hxc1427418039/v2ray-heroku" target="_blank" rel="noopener">v2ray 一键搭建脚本</a>，点紫色的按钮 Deploy to Heroku<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.loli.net/2018/08/12/5b702c5494322.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>　　<br>　　输入 app name，建议地区选欧洲，速度似乎较快。<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.loli.net/2018/08/12/5b702c5495481.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>　　<br>　　点击<a href="https://www.uuidgenerator.net" target="_blank" rel="noopener">随机生成 UUID</a>，替换掉默认的 UUID，然后点 Deploy app。<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.loli.net/2018/08/12/5b702c5493918.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>　　<br>　　等待一会，生成好了以后点最右边的 settings，config vars 里面点 reveal config vars，可以看到 UUID，复制下来配置的时候要用。在 Domains and certificates 里面有一个链接，点开，如果显示 Bad request，就说明成功了。<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.loli.net/2018/08/12/5b702c5495e54.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>　　<br>　　进入 v2ray 配置，主机名填刚刚打开的域名，注意是域名，没有 https，即 xxxxx.herokuapp.com，UUID 填刚刚复制的，其它照着图片中的填。<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://i.loli.net/2018/08/12/5b702c534806d.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>　　<br>　　配置好了以后就可以了。<br>　　<br>　　感谢 v2ray 一键脚本的开发者<a href="https://github.com/hxc1427418039" target="_blank" rel="noopener">hxc1427418039</a>和<a href="https://www.v2ray.com" target="_blank" rel="noopener">Project V</a>让我们能够用到自由的网络。</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;　　最近发现有一个程序托管的网站可以免费搭建 v2ray，自己测试了一下，速度还行，下载 1-2M/s，延迟 200ms 以上，自己看看视频网页是够用了。故写一篇教程，希望大家低调使用。&lt;br&gt;　　&lt;br&gt;
+      &lt;p&gt;　　12月7日更新&lt;br&gt;　　本方法已几乎失效，本文永久停止更新&lt;br&gt;
     
     </summary>
     
-      <category term="web tool" scheme="https://www.orin.gq/categories/web-tool/"/>
+      <category term="翻墙" scheme="https://www.orin.gq/categories/%E7%BF%BB%E5%A2%99/"/>
     
     
       <category term="v2ray" scheme="https://www.orin.gq/tags/v2ray/"/>
     
-      <category term="tutor" scheme="https://www.orin.gq/tags/tutor/"/>
+      <category term="教程" scheme="https://www.orin.gq/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   

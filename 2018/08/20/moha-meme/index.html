@@ -23,7 +23,7 @@ ga('send', 'pageview');
     
     
     
-    <title>[转] “膜蛤”的模因与迷思 | To Think | A site for liberty</title>
+    <title>[转] “膜蛤”的模因与迷思 | To Think | 观点在争论中碰撞，思想在思辨中创新</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
@@ -31,7 +31,7 @@ ga('send', 'pageview');
     
     <meta name="keywords" content="">
     <meta name="description" content="本文使用模因、迷思等传播学理论对中国互联网上的“膜蛤”现象进行了初步探究，对“膜蛤”的发展历程进行了追溯，并在回溯中发现其制造迷思的机制。最后本文提出了对“膜蛤”现象进行进一步研究的若干研究方向。　　本文转载自林中来信的博客，作者保留所有权。">
-<meta name="keywords" content="news, opinions, thoughts, ideas">
+<meta name="keywords" content="思想, 观点, 思辨, 创新">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[转] “膜蛤”的模因与迷思">
 <meta property="og:url" content="https://www.orin.gq/2018/08/20/moha-meme/index.html">
@@ -592,6 +592,27 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 <script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
 
 
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 
 
 

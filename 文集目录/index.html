@@ -23,15 +23,15 @@ ga('send', 'pageview');
     
     
     
-    <title>文集 | To Think | A site for liberty</title>
+    <title>文集 | To Think | 观点在争论中碰撞，思想在思辨中创新</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="news, opinions, thoughts, ideas">
+    <meta name="keywords" content="思想, 观点, 思辨, 创新">
     <meta name="description" content="@card{ by 时阅 } 目录@card{ @timeline{ 随笔@item{ 1寻根 } @item{ 2我看“佛系” } @item{ 3是你让我丰富 } @item{ 4光明与黑暗 } @item{ 5小狗Tedy } @item{ 6逃离 } } @timeline{ 读书报告@item{ 1《百年孤独》 } @item{ 2《故事新编》整理 } @item{ 3《故事新编》 }">
-<meta name="keywords" content="news, opinions, thoughts, ideas">
+<meta name="keywords" content="思想, 观点, 思辨, 创新">
 <meta property="og:type" content="website">
 <meta property="og:title" content="文集">
 <meta property="og:url" content="https://www.orin.gq/文集目录/index.html">
@@ -206,7 +206,7 @@ ga('send', 'pageview');
             <a href="/" class="avatar waves-effect waves-circle waves-light"><img src="/img/avatar.jpeg"></a>
             <div class="content flex-col">
                 <p><strong>Orin</strong></p>
-                <p><em>A site for liberty</em></p>
+                <p><em>观点在争论中碰撞，思想在思辨中创新</em></p>
                 <p>Published since July 2018 to take part in a severe contest between intelligence, which presses forward, and an unworthy, timid ignorance obstructing our progress.</p>
             </div>
 
@@ -227,7 +227,7 @@ ga('send', 'pageview');
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.orin.gq/文集目录/&title=《文集》 — To Think&source=My personal blog that simply shows my opinions and thoughts, to make the worl..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.orin.gq/文集目录/&title=《文集》 — To Think&source=这是我的博客，致力于构建一个开放的平台，分享我的观点和看法，让观点在争论中碰撞，思想在思辨中创新" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -360,7 +360,7 @@ ga('send', 'pageview');
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.orin.gq/文集目录/&title=《文集》 — To Think&source=My personal blog that simply shows my opinions and thoughts, to make the worl..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.orin.gq/文集目录/&title=《文集》 — To Think&source=这是我的博客，致力于构建一个开放的平台，分享我的观点和看法，让观点在争论中碰撞，思想在思辨中创新" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -422,6 +422,27 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 <script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
 
 
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 
 
 

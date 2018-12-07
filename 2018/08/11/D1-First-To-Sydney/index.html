@@ -23,7 +23,7 @@ ga('send', 'pageview');
     
     
     
-    <title>D1 First To Sydney | To Think | A site for liberty</title>
+    <title>D1 First To Sydney | To Think | 观点在争论中碰撞，思想在思辨中创新</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
@@ -31,7 +31,7 @@ ga('send', 'pageview');
     
     <meta name="keywords" content="">
     <meta name="description" content="初至悉尼，很多问题都不是很熟悉，因而走了很多弯路。">
-<meta name="keywords" content="news, opinions, thoughts, ideas">
+<meta name="keywords" content="思想, 观点, 思辨, 创新">
 <meta property="og:type" content="article">
 <meta property="og:title" content="D1 First To Sydney">
 <meta property="og:url" content="https://www.orin.gq/2018/08/11/D1-First-To-Sydney/index.html">
@@ -284,9 +284,9 @@ ga('send', 'pageview');
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2018/08/10/Free-V2ray/" id="post-next" class="post-nav-link">
+      <a href="/2018/08/10/免费v2ray搭建/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">Free V2ray</h4>
+        <h4 class="title">免费v2ray搭建</h4>
       </a>
     </div>
   
@@ -453,6 +453,27 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 <script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
 
 
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 
 
 
