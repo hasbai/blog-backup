@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>To Think</title>
+  <title>dubito cogito sum</title>
   
-  <subtitle>观点在争论中碰撞，思想在思辨中创新</subtitle>
+  <subtitle>独立之精神，自由之思想</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.orin.gq/"/>
